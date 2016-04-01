@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="Joao" script="Joao.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="846" head="47" body="113" legs="105" feet="113" addons="3" />
+<parameters>
+		<parameter key="message_greet" value="Ola |PLAYERNAME|. Estou vendendo: ({Addon Doll} por 35 barras)({Mount Doll} por 50 barras) ({VIP III Teleport} por 200 barras)"/>
+</parameters>
+</npc>

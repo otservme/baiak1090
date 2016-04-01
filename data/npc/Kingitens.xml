@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<npc name="King Seller" script="default.lua" walkinterval="2000" floorchange="0">
+	<health now="100" max="100" />
+	<look type="332" addons="0" />
+	<parameters>
+		<parameter key="module_shop" value="1" />
+		<parameter key="shop_buyable" value="
+	King Gugel,18398,6000000;
+	King Coat,18399,6000000;
+	King Legs,18400,6000000;
+	King Spellbook,18401,5000000;
+	King Shield,16103,5000000;
+	King Bow,21696,2500000;
+	King Sword,7403,3000000;
+	King Axe,7435,3000000;
+	King Club,7423,3000000;
+	King Staff,7414,3000000;
+	King Potion,12328,10000000;" />
+	</parameters>
+</npc>

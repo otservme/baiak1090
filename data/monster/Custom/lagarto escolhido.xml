@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lagarto Escolhido" nameDescription="a Lagarto Escolhido" race="blood" experience="205000" speed="160">
+	<health now="90000" max="90000"/>
+        <look type="344" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag summonable="0"/>
+		<flag hostile="1"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+                </flags>
+  <attacks>
+    <attack name="melee" interval="10" min="-2000" max="-4000"/>
+  </attacks>
+	<defenses armor="15" defense="22"/>
+	<elements>
+		<element earthPercent="90"/>
+		<element physicalPercent="20"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity death="1"/>
+	</immunities> 
+	<loot>
+		<item id="2349" chance="100"/><!-- battle shield -->
+	</loot>
+</monster>

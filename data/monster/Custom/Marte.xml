@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Marte" nameDescription="a Marte" race="blood" experience="600000" speed="150">
+	<health now="300000" max="300000"/>
+        <look type="234" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag summonable="0"/>
+		<flag hostile="1"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+                </flags>
+  <attacks>
+    <attack name="melee" interval="15" min="-10000" max="-15000"/>
+  </attacks>
+	<defenses armor="15" defense="22"/>
+	<elements>
+		<element earthPercent="90"/>
+		<element physicalPercent="20"/>
+		<element firePercent="-5"/>
+		<element deathPercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+                <immunity death="1"/>
+	</immunities> 
+	<loot>
+		<item id="9971" chance="100" countmax="30" /> --Barra De Ouro
+	</loot>
+</monster>

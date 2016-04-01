@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Suprem" nameDescription="a suprem" race="blood" experience="150000" speed="300" manacost="0">
+  <health now="35000" max="35000"/>
+  <look type="87" head="20" body="30" legs="40" feet="50" corpse="6031"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="250" attack="350"/>
+    <attack name="Rage of the Skies" interval="1000" chance="10" range="7" min="-2000" max="-3600">
+      <attribute key="shootEffect" value="energy"/>
+      <attribute key="areaEffect" value="energy"/>
+    </attack>
+    <attack name="great energy beam" interval="1000" chance="11" range="7" min="-1500" max="-1800">
+      <attribute key="shootEffect" value="suddendeath"/>
+      <attribute key="areaEffect" value="mortarea"/>
+    </attack>
+    <attack name="speed" interval="800" chance="12" radius="6" target="0" speedchange="-850" duration="60000">
+      <attribute key="areaEffect" value="rednote"/>
+    </attack>
+  </attacks>
+  <defenses armor="30" defense="35">
+    <defense name="healing" interval="1000" chance="20" min="200" max="500">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    <defense name="outfit" interval="1000" chance="5" monster="suprem" duration="4000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+  <elements>
+  <element firePercent="95"/>
+  <element energyPercent="0"/>
+  <element holyPercent="-25"/>
+  </elements>
+  <immunities>
+    <immunity death="0"/>
+    <immunity ice="0"/>
+    <immunity earth="0"/>
+    <immunity paralyze="1"/>
+    <immunity invisible="1"/>
+    <immunity physical="1"/>
+  </immunities>
+  <summons maxSummons="4">
+    <summon name="demon" interval="1000" chance="50" max="100"/>
+  </summons>
+  <voices interval="5000" chance="10">
+    <voice sentence="It's a kind of magic."/>
+    <voice sentence="Abrah Kadabrah!"/>
+    <voice sentence="Nothing hidden in my warpings."/>
+    <voice sentence="It's not a trick, it's Rahemos."/>
+    <voice sentence="Meet my dear friend from hell."/>
+    <voice sentence="I will make you believe in magic."/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- Gold
+    <item id="2390" chance="1000" /> -- volcanic rod
+    <item id="2495" chance="2000"/> -- Ancient Rune
+	    <item id="2153" chance="2400"/> -- Violet Gem
+    <item id="1987" chance="100000">
+      <inside>
+        <item id="9971" countmax="10" chance1="2000" chancemax="0"/> -- Gold 
+        <item id="2522" countmax="3" chance1="2000" chancemax="0"/> --Small Amethyst
+        <item id="2214" chance="2300"/> -- Ring of Healing
+        <item id="2447" chance="1011"/> -- Twin Axe
+        <item id="2184" chance="1300"/> -- Crystal Wand
+      </inside>
+    </item>
+  </loot>
+</monster>

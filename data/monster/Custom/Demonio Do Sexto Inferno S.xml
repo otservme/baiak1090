@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Demonio Do Sexto Inferno [*]" nameDescription="a demonio do sexto inferno" race="fire" experience="2000000" speed="520" manacost="0">
+  <health now="150500" max="150500"/>
+  <look type="35" corpse="5995"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="90" defense="10"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="50"/>
+    <flag runonhealth="0"/>
+  </flags>
+    <attacks>
+    <attack name="melee" interval="2000" min="-10500" max="-13500"/>
+    <attack name="energy" interval="1000" chance="12" length="8" spread="0" min="-1000" max="-1500">
+		<attribute key="areaEffect" value="energyarea"/>
+	</attack>
+	</attacks>
+    <defenses armor="55" defense="55">
+    <defense name="healing" interval="2000" chance="15" min="1000" max="2000">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+    </defenses>
+    <immunities>
+    <immunity fire="1"/>
+	<immunity ice="1"/>
+	<immunity poison="1"/>
+    <immunity paralyze="1"/>
+	<immunity outfit="1"/>
+	<immunity drunk="1"/>
+    <immunity invisible="1"/>
+	<immunity holy="1"/>
+  </immunities>
+  <summons maxSummons="2">
+    <summon name="juggernaut" interval="2000" chance="100"/>
+  </summons>
+  <voices interval="5000" chance="10">
+   <voice sentence="Your soul will be mine!" yell="0"/>
+   <voice sentence="MUHAHAHAHA!" yell="1"/>
+   <voice sentence="I SMELL FEEEEEAAAR!" yell="1"/>
+   <voice sentence="CHAMEK ATH UTHUL ARAK!" yell="1"/>
+   <voice sentence="Your resistance is futile!"/>
+   </voices>
+<loot>
+      <item id="7368" countmax="5" chance1="100000" chancemax="0"/>   -- assassinstar
+      <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- gold coins
+      <item id="2148" countmax="25" chance1="100000" chancemax="0"/>  -- gold coins	  
+      <item id="2393" chance="4000"/>                                 --giantsword
+	  <item id="2432" chance="3500"/>                                 --fire axe
+      <item id="1987" chance="100000">                                --bag
+<inside>	  
+	  <item id="2520" chance="3000"/>                                 --demon shield
+	  <item id="2470" chance="2500"/>                                 --glegs
+      <item id="2514" chance="2000"/>                                 --mastermind shield    
+      <item id="2472" chance="1500"/>                                 --magic plate armor 
+	  <item id="2495" chance="1000"/>                                 --demonlegs
+</inside>
+</item>
+</loot>
+</monster>

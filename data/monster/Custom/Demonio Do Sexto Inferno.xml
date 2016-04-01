@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Demonio Do Sexto Inferno" nameDescription="a Demonio Do Sexto Inferno" race="fire" experience="175000" speed="130" manacost="0">
+  <health now="97500" max="97500"/>
+  <look type="201" corpse="2916"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="1"/>
+    <flag canpushitems="0"/>
+    <flag canpushcreatures="0"/>
+    <flag staticattack="90"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="0"/>
+  </flags>
+<attacks>
+    <attack name="melee" interval="30" skill="-5200" attack="-7000"/>
+</attacks>
+  <defenses armor="8" defense="8"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="0"/>
+    <immunity fire="0"/>
+    <immunity poison="0"/>
+    <immunity lifedrain="0"/>
+    <immunity paralyze="0"/>
+    <immunity outfit="0"/>
+    <immunity drunk="0"/>
+    <immunity invisible="0"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="MUHAHAHAHA!"/>
+  </voices>
+  <loot>
+    <item id="2148" countmax="99" chance1="60000" chancemax="1321"/>
+    <item id="2148" countmax="99" chance1="53500" chancemax="2120"/>
+    <item id="2148" countmax="99" chance1="53500" chancemax="2120"/>
+    <item id="9971" chance="100" countmax="30" /> --Barra De Ouro
+  </loot>
+</monster>
+

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="dona morte [*]" nameDescription="um dona morte [*]" race="undead" experience="300000" speed="300" manacost="0">
+    <health now="60200" max="60200"/>
+    <look type="300" corpse="8955"/>
+    <targetchange interval="5000" chance="10"/>
+    <strategy attack="80" defense="20"/>
+    <flags>
+        <flag summonable="0"/>
+        <flag attackable="1"/>
+        <flag hostile="1"/>
+        <flag illusionable="0"/>
+        <flag convinceable="0"/>
+        <flag pushable="0"/>
+        <flag canpushitems="1"/>
+        <flag canpushcreatures="1"/>
+        <flag targetdistance="1"/>
+        <flag staticattack="50"/>
+        <flag runonhealth="0"/>
+    </flags>
+    <attacks>
+        <attack name="melee" interval="1500" min="-2500" max="-2800"/>
+        <attack name="melee" interval="1500" chance="20" min="-3500" max="-3700"/>
+        <attack name="speed" interval="1500" chance="30" target="1" speedchange="-900" duration="60000"/>
+    </attacks>
+    <defenses armor="30" defense="30">
+        <defense name="healing" interval="1000" chance="25" min="1000" max="1350">
+            <attribute key="areaEffect" value="blueshimmer"/>
+        </defense>
+    </defenses>
+    <immunities>
+        <immunity energy="1"/>
+		<immunity holy="1"/>
+        <immunity fire="1"/>
+        <immunity earth="1"/>
+        <immunity ice="1"/>
+        <immunity poison="1"/>
+        <immunity lifedrain="1"/>
+        <immunity paralyze="1"/>
+        <immunity outfit="1"/>
+        <immunity drunk="1"/>
+        <immunity invisible="1"/>
+       </immunities>
+    <voices interval="5000" chance="10">
+        <voice sentence="Chegou uma nova mensagem para voce!"/>
+		<voice sentence="Meu mestre Hades mandou levar voce!"/>
+    </voices>
+<loot>      
+      <item id="2152" countmax="6" chance1="100000" chancemax="0"/>   -- platinumcoins 
+	  <item id="7368" countmax="5" chance1="10000" chancemax="0"/>    -- assassinstar
+      <item id="2387" chance="2500"/>                                 --doubleaxe
+      <item id="2393" chance="2000"/>                                 --giantsword
+	  <item id="2432" chance="2000"/>                                 --fire axe  
+      <item id="1987" chance="100000">                                --bag
+<inside>
+	  <item id="2148" countmax="100" chance1="100000" chancemax="0"/> -- goldcoins 
+      <item id="2795" countmax="6" chance1="10000" chancemax="0"/>    -- firemushrooms
+	  <item id="2470" chance="1500"/>                                 --glegs
+      <item id="2472" chance="500"/>                                  --magic plate armor 
+	  <item id="8865" chance="200"/>                                  --armadurasombria 
+</inside>
+</item>
+</loot>
+</monster>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Hades" nameDescription="a hades" race="venom" experience="600000" speed="450" manacost="0">
+	<health now="600000" max="600000"/>
+	<look type="287" head="0" body="0" legs="0" feet="0" corpse="3058"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="100" defense="0"/>
+	<flags>
+		<flag summonable="0"/>
+		<flag attackable="1"/>
+		<flag hostile="1"/>
+		<flag illusionable="0"/>
+		<flag convinceable="0"/>
+		<flag pushable="0"/>
+		<flag canpushitems="1"/>
+		<flag canpushcreatures="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+		<flag runonhealth="1000"/>
+	</flags>
+	<attacks>
+		<attack name="melee" interval="30" skill="350" attack="350"/>
+                <attack name="death" interval="500" chance="20" range="50000" radius="50000" target="0" min="-5000" max="-15000">
+        <attribute key="areaEffect" value="mortarea"/>
+                </attack>
+	</attacks>
+	<defenses armor="60" defense="60">
+		<defense name="invisible" interval="2000" chance="13" duration="5000">
+			<attribute key="areaEffect" value="blueshimmer"/>
+		</defense>
+	</defenses>
+	<elements>
+		<element physicalPercent="-10"/>
+	        <element holyPercent="-10"/>
+	        <element earthPercent="90"/>
+	</elements>
+	<immunities>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+	<summons maxSummons="6">
+		<summon name="Dona Morte" interval="5500" chance="10000"/>
+		<summon name="Dona Morte" interval="5500" chance="10000"/>
+		<summon name="Dona Morte" interval="5500" chance="100000"/>
+		<summon name="Dona Morte" interval="5500" chance="100000"/>
+		<summon name="Dona Morte" interval="5500" chance="1000000"/>
+	</summons>
+	<voices interval="5000" chance="20">
+		<voice sentence="De Volta Ao Meu Trono" yell="1"/>
+		<voice sentence="Voltei Para meu Trono!" yell="1"/>
+		<voice sentence="I returned from death and you dream about defeating me?" />
+		<voice sentence="Vou Acabar com voce, haiakisuh'"/>
+	</voices>
+	<loot>
+		<item id="2160" countmax="23" chance1="100000" chancemax="0"/> --Gold
+		<item id="2514" chance="4550"/> --mastermind shield
+		<item id="2171" chance="3200"/> --platinum amulet		
+		<item id="7422" chance="7300"/> --Jade Hammer
+		<item id="2470" chance="3800"/> --Golden Legs
+		<item id="2148" countmax="80" chance1="100000" chancemax="0"/> --Gold
+		<item id="2148" countmax="75" chance1="100000" chancemax="0"/> -- Gold
+		<item id="9970" countmax="74" chance1="6500"/> --small topaz
+		<item id="1987" chance="100000">
+			<inside>
+				<item id="2522" chance="1000000"/> --Great Shield
+				<item id="8904" chance="1800"/> -- Spellscroll of prophecies
+				<item id="2147" countmax="46" chance1="4500"/> --small ruby
+				<item id="7410" chance="5300" /> --Queen's Scptre
+				<item id="8928" chance="7800"/> --Obsidian Truncheon
+				<item id="2145" countmax="46" chance1="3500" chancemax="0"/> --Small diamond
+				<item id="2462" chance="12400"/> --devil helmet
+				<item id="2149" countmax="3" chance1="1428" chancemax="0"/>
+				<item id="9971" chance="30" countmax="100" /> --Barra De Ouro
+			</inside>
+		</item>
+	</loot>
+</monster>

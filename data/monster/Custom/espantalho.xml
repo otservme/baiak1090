@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Espantalho" nameDescription="a espantalho" race="undead" experience="42975" speed="270" manacost="0">
+  <health now="20000" max="20000"/>
+  <look type="246" corpse="6354"/>
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="1"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="1000" skill="250" attack="250"/>
+    <attack name="death" interval="1000" chance="10" radius="7" target="0" min="-1000" max="-2000">
+		<attribute key="areaEffect" value="smallclouds"/>
+	</attack>
+    <attack name="earth" interval="1000" chance="7" range="1" min="-150" max="-750">
+		<attribute key="shootEffect" value="poison"/>
+		<attribute key="areaEffect" value="poison"/>
+    </attack>
+    <attack name="drunk" interval="1000" chance="8" range="7" radius="4" target="1" min="-200" max="-950">
+		<attribute key="shootEffect" value="poison"/>
+		<attribute key="areaEffect" value="poison"/>
+    </attack>
+
+  </attacks>
+  <defenses armor="15" defense="15">
+    <defense name="healing" interval="200" chance="50" min="1900" max="2400">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+	<elements>
+		<element firePercent="15"/>
+		<element icePercent="10"/>
+		<element energyPercent="10"/>
+		<element physicalPercent="-0"/>
+		<element holyPercent="-30"/>
+	</elements>
+	<immunities>
+		<immunity earth="1"/>
+		<immunity death="0"/>
+		<immunity lifedrain="1"/>
+		<immunity paralyze="1"/>
+		<immunity invisible="1"/>
+	</immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Evento de Sao Joao!"/>
+    <voice sentence="Vamos Pra Festa Junina!"/>
+  </voices>
+  <loot>
+    <item id="5468" countmax="1" chance="100000"/>
+    <item id="2148" countmax="80" chance="100000"/> --gold
+    <item id="2148" countmax="90" chance1="8000"/> --bunches of weath
+    <item id="5802" chance="10000"/> --torch
+ 	<item id="6500" countmax="2" chance1="6000"/> --Demonic Essence
+	<item id="5944" chance1="6666" countmax="1" /> -- soul orb   
+	<item id="2230" chance="0"/> --bone
+ 	<item id="1987" chance="0">
+		<inside>
+			<item id="9810"	chance="0"/> --rusty armor(rare)
+			<item id="2183" chance="0"/> --hailstorm rod
+		    <item id="2260" chance="0"/> --blank rune
+			<item id="2152" chance1="0" countmax="3"/> --platinums
+			<item id="2649" chance="0"/> --leather legs
+			<item id="2436" chance="0" /> -- skull staff
+			<item id="2173" chance="1500000"/> --aol
+			<item id="7863" chance="9000" /> -- scythe
+			<item id="7884" chance="0" /> -- terra mantle
+			<item id="7885" chance="0" /> -- terra legs
+		</inside>
+ 	</item>
+  </loot>
+</monster>

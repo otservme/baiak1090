@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Gnomo Supremo" nameDescription="a gnomo supremo" race="blood" experience="200000" speed="370" manacost="0">
+  <health now="240000" max="240000"/>
+	<look type="504" corpse="18443" />
+  <targetchange interval="5000" chance="8"/>
+  <strategy attack="100" defense="0"/>
+  <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag canpushcreatures="1"/>
+    <flag targetdistance="1"/>
+    <flag staticattack="90"/>
+    <flag runonhealth="0"/>
+  </flags>
+  <attacks>
+    <attack name="melee" interval="2000" skill="320" attack="500"/>
+    <attack name="physical" interval="1000" chance="15" range="7" min="-4000" max="-8000">
+      <attribute key="shootEffect" value="snowball"/>
+      <attribute key="areaEffect" value="poff"/>
+    </attack>
+    <attack name="energy" interval="1000" chance="12" length="3" spread="3" min="-1200" max="-11175">
+      <attribute key="areaEffect" value="poff"/>
+    </attack>
+  </attacks>
+  <defenses armor="28" defense="33"/>
+  <immunities>
+    <immunity physical="0"/>
+    <immunity energy="1"/>
+    <immunity fire="0"/>
+    <immunity poison="1"/>
+    <immunity lifedrain="1"/>
+    <immunity paralyze="1"/>
+    <immunity outfit="1"/>
+    <immunity drunk="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  <voices interval="5000" chance="10">
+    <voice sentence="Yooodelaaahooohooo!"/>
+    <voice sentence="Yooodelaaaheeeheee!"/>
+  </voices>
+  <loot>
+    <item id="2671" countmax="3" chance1="10000" chancemax="0"/>
+    <item id="2666" countmax="5" chance1="33333" chancemax="0"/>
+    <item id="2522" chance="1333"/>
+    <item id="2495" chance="3000"/>
+    <item id="2470" chance="700"/>
+    <item id="2472" chance="6666"/>
+    <item id="2177" chance="2500"/>
+    <item id="2044" chance="10000"/>
+    <item id="2448" chance="10000"/>
+    <item id="9971" countmax="15" chance1="12500" chancemax="0"/>
+  </loot>
+</monster>
+

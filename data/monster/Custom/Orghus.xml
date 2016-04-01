@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+  <monster name="Orghus" nameDescription="a orghus" race="undead" experience="300000" species="energy" speed="300" manacost="0">
+    <health now="52000" max="52000"/>
+    <look type="290" corpse="1495"/>
+    <targetchange interval="20000" chance="15"/>
+    <strategy attack="100" defense="0"/>
+   <flags>
+    <flag summonable="0"/>
+    <flag attackable="1"/>
+    <flag hostile="1"/>
+    <flag illusionable="0"/>
+    <flag convinceable="0"/>
+    <flag pushable="0"/>
+    <flag canpushitems="1"/>
+    <flag staticattack="85"/>
+    <flag lightlevel="0"/>
+    <flag lightcolor="0"/>
+    <flag targetdistance="1"/>
+    <flag runonhealth="1"/>
+    </flags>
+<attacks>
+    <attack name="melee" interval="2000" skill="100" attack="1000"/>
+    <attack name="energy" interval="2500" chance="50" range="3" target="1" radius="2" min="-1000" max="-14000">
+      <attribute key="areaEffect" value="purpleenergy"/>
+   </attack>
+</attacks>
+    <defenses armor="30" defense="30">
+    <defense name="healing" interval="2000" chance="15" min="500" max="900">
+      <attribute key="areaEffect" value="blueshimmer"/>
+    </defense>
+  </defenses>
+<elements>
+		<element physicalPercent="30"/>
+		<element holyPercent="15"/>
+		<element deathPercent="10"/>
+		<element fdearthPercent="-20"/>
+
+  <summons maxSummons="8">
+    <summon name="Soorein" interval="1000" chance="10000000"/>
+    <summon name="Soorein" interval="1000" chance="10000000"/>
+  </summons>
+
+</elements>
+  <immunities>
+    <immunity ice="1"/>
+    <immunity energy="1"/>
+    <immunity fire="1"/>
+    <immunity invisible="1"/>
+  </immunities>
+  </monster>

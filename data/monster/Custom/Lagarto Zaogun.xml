@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lagarto Zaogun" nameDescription="a Lagarto Zaogun" race="blood" experience="14500" speed="60">
+	<health now="29550" max="29550"/>
+        <look type="343" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="1000" defense="2000"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag summonable="0"/>
+		<flag hostile="1"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+                </flags>
+  <attacks>
+    <attack name="melee" interval="15" min="-1000" max="-4500"/>
+  </attacks>
+	<defenses armor="15" defense="22"/>
+	<elements>
+		<element earthPercent="90"/>
+		<element physicalPercent="20"/>
+		<element firePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+        </immunities> 
+	<loot>
+		
+		
+		<item id="2160" chance="10"/><!-- Crystal Coins -->
+		<item id="2160" chance="10"/><!-- Crystal Coins -->
+		<item id="2349" chance="10"/><!-- battle shield -->
+                <item id="9971" chance="100" countmax="10" /> --Barra De Ouro
+	</loot>
+</monster>

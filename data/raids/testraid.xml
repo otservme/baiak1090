@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<raid>
+	<!-- Message broadcast -->
+	<!-- Broadcast types: warning, event, default, description, smallstatus, blueconsole, redconsole -->
+	<announce delay="1000" type="warning" message="Humongous Fungus estao invadindo a cidade principal!" />
+	<announce delay="25000" type="warning" message="Corra eles estao chegando!" />
+
+	<!-- Area spawns - you can specify raid area or use range value -->
+	<areaspawn delay="2000" radius="5" centerx="5038" centery="5025" centerz="7">
+		<monster name="Humongous Fungus" amount="3" /><!-- Specified amount -->
+	</areaspawn>
+
+	<areaspawn delay="30000" fromx="5027" fromy="5002" fromz="7" tox="5063" toy="5055" toz="7">
+		<monster name="Humongous Fungus" minamount="4" maxamount="15" /><!-- Random amount in specified range -->
+	</areaspawn>
+
+	<!-- Single spawns -->
+	<singlespawn delay="15000" name="Hideous Fungus" x="5042" y="5025" z="7" />
+	<singlespawn delay="30000" name="Hideous Fungus" x="5053" y="5025" z="7" />
+	<singlespawn delay="30000" name="Hideous Fungus" x="5038" y="5013" z="7" />
+</raid>

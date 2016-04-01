@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lagarto Legionario" nameDescription="a Lagarto Legionario" race="blood" experience="11000" speed="60">
+	<health now="14000" max="14000"/>
+        <look type="339" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="1000" defense="2000"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag summonable="0"/>
+		<flag hostile="1"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+                </flags>
+  <attacks>
+    <attack name="melee" interval="15" min="-250" max="-2500"/>
+  </attacks>
+	<defenses armor="15" defense="22"/>
+	<elements>
+		<element earthPercent="90"/>
+		<element physicalPercent="20"/>
+		<element firePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+        </immunities> 
+	<loot>
+	        <item id="2349" chance="10"/><!-- battle shield -->
+                <item id="9971" chance="100" countmax="5" /> --Barra De Ouro
+	</loot>
+</monster>

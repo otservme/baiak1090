@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<monster name="Lagarto Sacerdote Do Dragao" nameDescription="a Lagarto Sacerdote Do Dragao" race="blood" experience="12000" speed="60">
+	<health now="5200" max="5200"/>
+        <look type="339" head="114" body="114" legs="114" feet="114" addons="3" corpse="6080"/>
+	<targetchange interval="5000" chance="8"/>
+	<strategy attack="1000" defense="2000"/>
+	<flags>
+		<flag attackable="1"/>
+		<flag summonable="0"/>
+		<flag hostile="1"/>
+		<flag canpushitems="1"/>
+		<flag targetdistance="1"/>
+		<flag staticattack="90"/>
+                </flags>
+  <attacks>
+    <attack name="melee" interval="50" min="-250" max="-1500"/>
+  </attacks>
+	<defenses armor="15" defense="22"/>
+	<elements>
+		<element earthPercent="90"/>
+		<element physicalPercent="20"/>
+		<element firePercent="-5"/>
+	</elements>
+	<immunities>
+		<immunity invisible="1"/>
+        </immunities> 
+	<loot>
+	        <item id="2349" chance="10"/><!-- battle shield -->
+	</loot>
+</monster>
